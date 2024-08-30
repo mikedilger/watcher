@@ -1,0 +1,11 @@
+[package]
+name = "watcher"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = [ "full" ] }
+parking_lot = { version = "0.12", features = [ "arc_lock", "send_guard" ] }
+
+[dev-dependencies]
+futures = { version = "0.3.0", features = ["async-await"] }
